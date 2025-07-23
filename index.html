@@ -1,46 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Flower Shop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-gray-700 font-serif mt-[30px] ml-[0px]">
+<body class="text-gray-700 font-serif">
 
-
-  <!-- Header -->
-  <header class="flex items-center justify-between shadow-md mx-auto px-4" style="width:1140px; height:71px;">
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-4 py-4 shadow-md w-full max-w-[1140px] mx-auto">
   <div class="text-2xl font-bold">🌸Logo</div>
-  <nav class="space-x-6">
+
+  <!-- Desktop Menu -->
+  <nav class="space-x-6 hidden md:flex">
     <a href="#" class="hover:text-pink-600">Home</a>
     <a href="#" class="hover:text-pink-600">Shop</a>
     <a href="#" class="hover:text-pink-600">About Us</a>
-    <a href="#" class="hover:text-pink-600">🛒 Cart</a>
+    <a href="#" class="hover:text-pink-600 inline-flex items-center">
+      <img src="images/icons8-cart.gif" alt="Cart Icon" class="h-5 w-5 mr-1" />
+      Cart
+    </a>
   </nav>
+
+  <!-- Mobile Cart -->
+  <div class="md:hidden text-sm font-semibold inline-flex items-center">
+    <img src="images/icons8-cart.gif" alt="Cart Icon" class="h-5 w-5 mr-1" />
+    Cart
+  </div>
 </header>
 
+  <!-- Banner Section -->
+  <!-- Banner Section -->
+<section class="w-full mt-10">
+  <div class="flex flex-col-reverse md:flex-row items-end justify-between w-full max-w-[1140px] mx-auto bg-pink-50">
+    
+    <!-- Text Content at bottom-left -->
+    
+      <div class="w-full md:w-2/5 px-4 md:pl-6 md:pb-6 text-left flex flex-col justify-end h-full mt-7 md:mt-0">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight" style="font-family: 'Noto Serif', serif;">
+  <span class="block whitespace-nowrap">
+    ALWAYS <span class="text-orange-600">FRESH</span>
+  </span>
+  <span class="block text-orange-600">FLOWERS</span>
+</h1>
 
-  <!--    Banner Section -->
-  <section class="relative flex items-end justify-between px-6 bg-pink-50 mx-auto mt-[110px] w-[1140px] h-[461px] overflow-hidden">
-  <div class="w-2/5 pr-6 pb-6 z-10">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4" style="font-family: 'Noto Serif', serif;">ALWAYS <span class="text-orange-600">FRESH FLOWERS</span></h1>
-    <p class="text-lg text-gray-600">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
-  </div>
-  <div class="w-1/2">
-    <img src="images/hero-flower.png" alt="Flowers" class="rounded-lg absolute bottom-0 right-0 h-full object-cover">
+
+
+        <p class="text-lg text-gray-600">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
+      </div>
+    
+
+    <!-- Banner Image -->
+    <div class="w-full md:w-3/5">
+      <img src="images/hero-flower.png" alt="Flowers" class="w-full h-full object-cover m-0 p-0" />
+    </div>
+
   </div>
 </section>
 
-<section>
 
-
-</section>
-
+  <!-- Footer -->
   <footer>
-
+ 
   </footer>
+
 </body>
 </html>
