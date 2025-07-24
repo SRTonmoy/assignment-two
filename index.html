@@ -12,6 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+    <style>
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+</style>
+
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -78,7 +85,9 @@
           </h1>
 
           <p class="text-lg text-gray-600">
-            Experience the charm and aroma of nature’s finest blossoms at our flower shop. Whether you seek timeless roses or rare exotic flowers, we provide an exquisite selection to brighten every moment.
+            Experience the charm and aroma of nature’s finest blossoms at our
+            flower shop. Whether you seek timeless roses or rare exotic flowers,
+            we provide an exquisite selection to brighten every moment.
           </p>
         </div>
 
@@ -100,7 +109,9 @@
         <p
           class="text-gray-600 break-words mx-auto text-base sm:text-lg max-w-[600px]"
         >
-          Awaken your senses with the beauty and scent of our fresh flower shop. From elegant roses to unique exotic blooms, we provide a wide selection of fresh flowers perfect for any occasion.
+          Awaken your senses with the beauty and scent of our fresh flower shop.
+          From elegant roses to unique exotic blooms, we provide a wide
+          selection of fresh flowers perfect for any occasion.
         </p>
       </div>
 
@@ -120,8 +131,8 @@
           </div>
           <h3 class="font-semibold mt-3">Rose🌹</h3>
           <p class="text-sm text-gray-500">$3 USD</p>
-          <button onclick="alert('Flower has been added to Cart')"
-
+          <button
+            onclick="alert('Flower has been added to Cart')"
             class="mt-2 px-4 py-1 bg-pink-500 text-white rounded hover:bg-pink-600"
           >
             Add to cart
@@ -140,7 +151,8 @@
           </div>
           <h3 class="font-semibold mt-3">Tulip🌷</h3>
           <p class="text-sm text-gray-500">$2 USD</p>
-          <button onclick="alert('Flower has been added to Cart')"
+          <button
+            onclick="alert('Flower has been added to Cart')"
             class="mt-2 px-4 py-1 bg-pink-500 text-white rounded hover:bg-pink-600"
           >
             Add to cart
@@ -159,7 +171,8 @@
           </div>
           <h3 class="font-semibold mt-3">Sunflower🌻</h3>
           <p class="text-sm text-gray-500">$2 USD</p>
-          <button onclick="alert('Flower has been added to Cart')"
+          <button
+            onclick="alert('Flower has been added to Cart')"
             class="mt-2 px-4 py-1 bg-pink-500 text-white rounded hover:bg-pink-600"
           >
             Add to cart
@@ -177,7 +190,8 @@
           </div>
           <h3 class="font-semibold mt-3">Peony🌸</h3>
           <p class="text-sm text-gray-500">$5 USD</p>
-          <button onclick="alert('Flower has been added to Cart')"
+          <button
+            onclick="alert('Flower has been added to Cart')"
             class="mt-2 px-4 py-1 bg-pink-500 text-white rounded hover:bg-pink-600"
           >
             Add to cart
@@ -195,7 +209,8 @@
           </div>
           <h3 class="font-semibold mt-3">Lily🌼</h3>
           <p class="text-sm text-gray-500">$3 USD</p>
-          <button onclick="alert('Flower has been added to Cart')"
+          <button
+            onclick="alert('Flower has been added to Cart')"
             class="mt-2 px-4 py-1 bg-pink-500 text-white rounded hover:bg-pink-600"
           >
             Add to cart
@@ -213,7 +228,8 @@
           </div>
           <h3 class="font-semibold mt-3">Orchid🪷</h3>
           <p class="text-sm text-gray-500">$6 USD</p>
-          <button onclick="alert('Flower has been added to Cart')"
+          <button
+            onclick="alert('Flower has been added to Cart')"
             class="mt-2 px-4 py-1 bg-pink-500 text-white rounded hover:bg-pink-600"
           >
             Add to cart
@@ -231,7 +247,8 @@
           </div>
           <h3 class="font-semibold mt-3">Gerbera Daisy🌺</h3>
           <p class="text-sm text-gray-500">$2 USD</p>
-          <button onclick="alert('Flower has been added to Cart')"
+          <button
+            onclick="alert('Flower has been added to Cart')"
             class="mt-2 px-4 py-1 bg-pink-500 text-white rounded hover:bg-pink-600"
           >
             Add to cart
@@ -249,7 +266,8 @@
           </div>
           <h3 class="font-semibold mt-3">Hydrangea💠</h3>
           <p class="text-sm text-gray-500">$3 USD</p>
-          <button onclick="alert('Flower has been added to Cart')"
+          <button
+            onclick="alert('Flower has been added to Cart')"
             class="mt-2 px-4 py-1 bg-pink-500 text-white rounded hover:bg-pink-600"
           >
             Add to cart
@@ -268,10 +286,12 @@
         />
 
         <img
-          src="images/trusted-badge.png"
-          alt="Trusted Badge"
-          class="hidden lg:block absolute -top-20 -right-20 w-[300px] h-[300px] object-contain"
-        />
+  src="images/trusted-badge.png"
+  alt="Trusted Badge"
+  class="hidden lg:block absolute object-contain"
+  style="top: -120px; right: -120px; width: 300px; height: 300px; animation: spin 13s linear infinite;"
+/>
+
       </div>
 
       <div class="md:w-1/2">
@@ -306,8 +326,8 @@
       </h2>
 
       <p class="text-gray-600">
-        Grab the best prices on fresh flowers and unique plants, perfect for
-        gifting, decorating, or simply brightening your day.
+        Enjoy amazing deals on vibrant flowers and rare plants, ideal for
+        presents, home decor, or lifting your spirits.
       </p>
     </section>
 
@@ -411,7 +431,7 @@
             placeholder="Enter your email.."
             class="w-full p-2 rounded text-gray-800"
           />
-          <button
+          <button onclick="alert('Subscribed')"
             class="w-full sm:w-auto px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600"
           >
             Subscribe
@@ -436,8 +456,7 @@
           <span>BloomNest</span>
         </div>
         <p class="max-w-[280px] text-gray-600">
-          Indulge your senses with the beauty and fragrance of our fresh flower
-          shop.
+          Let the charm and scent of our fresh flowers captivate your senses.
         </p>
       </div>
 
